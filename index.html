@@ -1,0 +1,142 @@
+<!-- <input id="box1" value="0">
+<input id="box2" value="0">
+<button onclick="output()">Add</button>
+<p id="res">Result</p>
+
+<script> 
+    var bx1 = document.getElementById("box1")
+    var bx2 = document.getElementById("box2")
+    var resultt = document.getElementById("res")
+
+    function output() {
+        var box1result = Number(bx1.value)
+        var box2result = Number(bx2.value)
+
+        var total = box1result + box2result
+
+        resultt.textContent = total
+        console.log(resultt.textContent)
+    }
+</script> -->
+
+<!-- GUESSSING GAME MANIPULATION
+<p>Guess the Number from 1 to 10</p>
+<input type="number"  id="num" value="0">
+<button onclick="randomgenerator()">Check</button>
+<p id="result" >You are wrong/Right</p>
+<p id="scr">Your Score : 10</p>
+
+<script>
+    var a = document.getElementById("num")
+    var res = document.getElementById("result")
+    var b =Math.floor(Math.random()*10) +1
+    var score = document.getElementById("scr")
+    var totalscore = 10
+    function randomgenerator() {
+        var c = a.value
+
+        if (c==b) {
+            console.log("Right")
+            res.textContent = "You are Right"
+            alert("You Won the Game Congraluations....")
+        }
+        else {
+            totalscore = totalscore -1
+            score.textContent = "Your Score : "+totalscore
+            console.log("Wrong")
+            res.textContent = "You are Wrong"
+        }
+    }
+</script>-->
+
+<!--<input id="val" onkeyup="update()">
+<h1 id="res"></h1>
+
+<script>
+    var a = document.getElementById("val")
+    var result = document.getElementById("res")
+
+    function update() {
+        
+        result.textContent = a.value
+    }
+</script>-->
+
+<!-- Css Manipulation 
+<style>
+    div {
+        background-color: yellow;
+        width: 200px;
+        height: 200px;
+    }
+
+    .widthmax{
+        width: 900px;
+        transition: 2s;
+    }
+</style>
+<div id="box"></div>
+<button onclick="change()">change</button>
+
+<script>
+    var a = document.getElementById("box")
+    function change() 
+    {
+        a.style.backgroundColor = "black"
+        a.setAttribute("class","widthmax")
+    }
+</script>-->
+
+<!-- Create a element such as a tag in the html using js
+<button onclick="update()">Add</button>
+<div id="result"></div>
+
+<script>
+    //select div tag
+    var resultt = document.getElementById("result")
+    
+    function update() {
+        // Create a new element
+        var textlist = document.createElement("h1")
+        textlist.textContent = "Abinaya"
+
+        resultt.append(textlist)
+
+    }
+</script>-->
+
+<!-- Button Color change
+<button id="color" onclick="change()">change</button>
+<script>
+    var result = document.getElementById("color")
+    function change() {
+        result.style.backgroundColor = "red"
+    }
+</script>-->
+
+<!-- EVENT OBJECT PASSING 
+<h1 id="text" >Name</h1>
+<button onclick="change(event)">Udayakumar</button>
+<button onclick="change(event)">Asta</button>
+<button onclick="change(event)">Elwin</button>
+
+<script>
+    var result = document.getElementById("text")
+    function change(event) {
+        result.textContent = event.target.textContent
+        console.log(event.target.textContent)
+    }
+
+</script>-->
+
+<!--
+<h1 onclick="deleteitem(event)">Udaya</h1>
+<h1 onclick="deleteitem(event)">Nikhil</h1>
+<h1 onclick="deleteitem(event)">Ashwin</h1>
+<h1 onclick="deleteitem(event)">Naresh</h1>
+
+<script>
+    function deleteitem(event) {
+        event.target.remove()
+    }
+</script> -->
